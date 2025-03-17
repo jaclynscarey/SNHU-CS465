@@ -1,9 +1,9 @@
 var fs = require('fs');
-var meals = JSON.parse(fs.readFileSync('./data/meals.json', 'utf8'));
+var mealsData = JSON.parse(fs.readFileSync('./data/meals.json', 'utf8'));
 
 /* GET meals view */
 const meals = (req, res) => {
-    res.render('meals', { title: "Travlr Getaways", meals});
+    res.render('meals', { title: "Travlr Getaways", mealsData});
 };
 
 module.exports = {
