@@ -11,6 +11,7 @@ var roomsRouter = require('./app_server/routes/rooms');
 var mealsRouter = require('./app_server/routes/meals');
 var newsRouter = require('./app_server/routes/news');
 var aboutRouter = require('./app_server/routes/about');
+var contactRouter = require('./app_server/routes/contact');
 var app = express();
 var handlebars = require('hbs');
 
@@ -36,6 +37,7 @@ app.use('/rooms', roomsRouter);
 app.use('/meals', mealsRouter);
 app.use('/news', newsRouter);
 app.use('/about', aboutRouter);
+app.use('/contact', contactRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
