@@ -35,7 +35,7 @@ export class EditTripComponent implements OnInit {
     }
 
     console.log('EditTripComponent::ngOnInit');
-    console.log('tripcode:' + tripCode);
+    // console.log('tripcode:' + tripCode);
 
     this.editForm = this.formBuilder.group({
       _id: [],

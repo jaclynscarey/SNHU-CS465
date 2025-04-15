@@ -52,6 +52,10 @@ export class TripListingComponent implements OnInit {
       })
   }
 
+  onTripDeleted(deletedTripCode: string): void {
+    this.trips = this.trips.filter((trip: Trip) => trip.code !== deletedTripCode);
+  }
+
   ngOnInit(): void {
       console.log('ngOnInit');
       this.getStuff();
