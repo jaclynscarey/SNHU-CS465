@@ -1,6 +1,6 @@
 # Travlr Getaways - Full Stack Web Application (SNHU-CS465)
  
-# This is a full stack travel booking web application developed as part of the CS-465 Full Stack Development course at Southern New Hampshire University (SNHU). The application allows users to view available trip packages on a customer-facing site and includes a secure, admin-only single-page application (SPA) for managing trips.
+## This is a full stack travel booking web application developed as part of the CS-465 Full Stack Development course at Southern New Hampshire University (SNHU). The application allows users to view available trip packages on a customer-facing site and includes a secure, admin-only single-page application (SPA) for managing trips.
  
 ## Technologies Used
  
