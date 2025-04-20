@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { Trip } from '../models/trip';
 import { TripDataService } from '../services/trip-data.service';
 import { Output, EventEmitter } from '@angular/core';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-trip-card',
@@ -21,7 +22,8 @@ export class TripCardComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private tripDataService: TripDataService
+    private tripDataService: TripDataService,
+    private authenticationService: AuthenticationService
   ) { }
 
   ngOnInit(): void {
@@ -45,6 +47,10 @@ export class TripCardComponent implements OnInit {
         }
       })
     this.tripDeleted.emit(this.trip.code);
+  }
+
+  public isLoggedIn() {
+    return this.authenticationService.isLoggedIn();
   }
 
 }
